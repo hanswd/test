@@ -1,0 +1,17 @@
+.side-bar
+    background-color: rgb(235, 235, 235)
+    position: fixed
+    z-index: 3
+    top: 0px
+    right: 0px
+    bottom: 0px
+    left: 100%
+    transition: all 0.2s ease-in-out 0s
+    overflow: auto
+    padding: 20px
+    @media (min-width: 1024px)
+        display: contents
+
+    .is-burger-active &
+        left: 40%
+        box-shadow: rgba(128, 128, 128, 0.43) 0px 0px 15px 0.2px
