@@ -7,10 +7,18 @@
 - pug(jade)
 - sass
 - js (swiper, burger, modals popup)
-  
+
 ### scripts
 
 - npm install
-- npm run watch 
+- npm run watch
 - npm run dev
 - npm run build
+
+####
+
+- test
+  
+#### Change log
+
+- added new featre

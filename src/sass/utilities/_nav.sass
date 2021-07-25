@@ -1,0 +1,112 @@
+.nav
+    margin-top: 50px
+    width: 100%
+    line-height: 2
+    @media (min-width: 1024px)
+        margin-top: 0px
+
+.nav-items
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-direction: column
+    @media (min-width: 1024px)
+        flex-direction: row
+        align-items: center
+    @media (min-width: 1920px)
+        align-items: center
+
+.nav-left
+    align-items: flex-start
+    width: 100%
+    justify-content: space-between
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding: 0
+    list-style: none
+    @media (min-width: 768px)
+        width: 100%
+        justify-content: space-around
+    @media (min-width: 1024px)
+        align-items: center
+        flex-direction: row
+        width: 45%
+    @media (min-width: 1920px)
+        width: 30vw
+        justify-content: space-around
+
+    &__left
+        color: rgb(144, 144, 144)
+        text-decoration: none
+
+        &:hover
+            color: black
+        &:after
+            background: none repeat scroll 0 0 transparent
+            bottom: 5px
+            content: ""
+            display: block
+            height: 1.5px
+            left: 50%
+            position: relative
+            background: white
+            box-shadow: 0 1px 2px black
+            transition: width 0.3s ease 0s, left 0.3s ease 0s
+            width: 0
+        &:hover::after
+            width: 100%
+            left: 0     
+
+
+.nav-right
+    margin: 0
+    padding: 0
+    list-style: none
+    @media (min-width: 1024px)
+        display: flex
+        align-items: center
+        width: 45%
+        justify-content: space-between
+    @media (min-width: 1920px)
+        width: 30vw
+        justify-content: space-around
+
+    &__line
+        display: inline-block
+        @media (min-width: 1024px)
+            display: flex
+            gap: 5px
+
+    &__right
+        cursor: pointer
+        color: rgb(49, 49, 49)
+        text-transform: uppercase
+        border-style: none
+        padding: 0
+        background: transparent
+        transition: color 0.2s linear 0s
+        text-decoration: none
+        &:hover
+            color: gray
+        &:after
+            bottom: 5px
+            content: ""
+            display: block
+            height: 1.5px
+            left: 50%
+            position: relative
+            background: white
+            box-shadow: 0 1px 2px black
+            transition: width 0.3s ease 0s, left 0.3s ease 0s
+            width: 0
+        &:hover::after
+            width: 100%
+            left: 0   
+
+.nav-right-line
+    display: none
+    @media (min-width: 1024px)
+        display: block
+        height: 14px
+        border-left: thin solid black                

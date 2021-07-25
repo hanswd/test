@@ -1,0 +1,130 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name='viewport' content='width=device-width, initial-scale=-1')
+        meta(name='description' content="This is my third project. I wanted to create an e - commerce web site, the best template as i found was `adidas-shop`, so i have to imporve myself everyday. This project looks interesting for me, so i'm very exciting to create it. Wish me the best of luck")
+        title adidas
+        link(rel='icon' href='images/favicon/favicon.ico')
+        link(rel='stylesheet' href='css/app.css')
+
+    body(data-parent='body')
+        header.header(data-parent='header')
+            .header__logo   
+                img(src='images/logo.png' alt='logo')
+            .side-bar
+                .nav-burger(data-module='active' data-target='header' data-class='is-burger-active')
+                    button.nav-burger__button(type='button')             
+                nav.nav
+                    .nav-items
+                        ul.nav-left
+                            li
+                                a.nav-left__left(href='/') adidas men
+                            li
+                                a.nav-left__left(href='/') adidas woman
+                            li
+                                a.nav-left__left(href='/') adidas kids 
+                        ul.nav-right
+                            li
+                                button.modal-button(type='button' data-module='modal' data-target='search') search
+                                .modal(data-modal='search' data-module='modal' data-target='search')
+                                    .modal-content
+                                        button.modal-close(type='button' data-module='modal' data-target='search') X
+                                        p Some text in the Modal..
+                            .nav-right__line
+                                li
+                                    button.modal-button(type='button' data-module='modal' data-target='join') join
+                                    .modal(data-modal='join' data-module='modal' data-target='join')
+                                        .modal-content
+                                            button.modal-close(type='button' data-module='modal' data-target='join') X
+                                            form.form(method='POST')
+                                                .form__row
+                                                    .control
+                                                        label.non-visible(for='firstName') first name
+                                                        input#firstName(placeholder='first name' type='text' name='firstName')
+                                                    .control
+                                                        label.non-visible(for='password') password
+                                                        input#password(placeholder='password' type='text' name='password')
+                                                            //- button.registration 
+                                                            //-     p registration
+
+                                    //- button.nav-right__right(type='button' href='/') join 
+                                hr.nav-right-line
+                                li
+                                    button.modal-button(type='button' data-module='modal' data-target='login') log in
+                                    .modal(data-modal='login' data-module='modal' data-target='login')
+                                        .modal-content
+                                            button.modal-close(type='button' data-module='modal' data-target='login') X
+                                            form.form(method='POST')
+                                                .form__row
+                                                    .control
+                                                        label.non-visible(for='firstName') first name
+                                                        input#firstName(placeholder='first name' type='text' name='firstName')
+                                                    .control
+                                                        label.non-visible(for='password') password
+                                                        input#password(placeholder='password' type='text' name='password')
+                                    //- button.nav-right__right(type='button' href='/')  log in
+                            li
+                                button.modal-button(type='button' data-module='modal' data-target='cart') cart [ 0 ]
+                                .modal(data-modal='cart' data-module='modal' data-target='cart')
+                                    .modal-content
+                                        button.modal-close(type='button' data-module='modal' data-target='cart') X
+                                        p cart
+                            li
+                                button.modal-button(type='button' data-module='modal' data-target='usa') usa
+                                .modal(data-modal='usa' data-module='modal' data-target='usa')
+                                    .modal-content
+                                        button.modal-close(type='button' data-module='modal' data-target='usa') X
+                                        p usa
+                                //- button.nav-right__right(type='button' href='/') usa
+            .nav-burger(data-module='active' data-target='header' data-class='is-burger-active')
+                button.nav-burger__button(type='button')              
+        main.adidas
+            article.adidas-wrapper
+                .adidas-swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            .adidas-grid
+                                section.grid-left
+                                    p.grid-left__price 120$
+                                    .grid-left-button
+                                        p.grid-left-button__title color: <br> exclusive
+                                        button.grid-left-button__color(type='button')
+                                            img(src='images/color.png' alt='chooseTheColor')
+                                    button.grid-left-reviews(type='button')
+                                        p.grid-left-reviews__explore explore 
+                                        p.grid-left-reviews__reviews reviews
+
+                                section.grid-mid
+                                    img.grid-mid__boot(src='images/boot.png' alt='sneaker')
+                                section.grid-right
+                                    .grid-right-model
+                                        p.grid-right-model--title adidas <br>
+                                        p.grid-right-model--subtitle superstar
+                                    .grid-right-sex
+                                        p.grid-right-sex__gender men's shoe
+                                        button.grid-right-sex__size(type='button') size
+                                            i.grid-right-sex__size--arrow  
+                                    button.grid-right-purchase(type='button')
+                                        p.grid-right-purchase__item add to cart
+                .swiper-pagination 
+
+        footer.footer
+            .footer-nav
+                .footer-items
+                    ul.footer-left
+                        button.footer-left-button
+                            img.footer-left-button__button(src='images/back.png' alt='backButton')
+                            li
+                                a.footer-left-button__left(href='/') back
+                    ul.footer-right
+                        li
+                            a.footer-right__right(href='/') help
+                        li
+                            a.footer-right__right(href='/') shop
+                        li
+                            a.footer-right__right(href='/') customize         
+        
+    script(src='/js/app.js')
+    

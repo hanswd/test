@@ -1,0 +1,21 @@
+.header
+    display: flex
+    align-items: center
+    max-width: 350px
+    margin: 2rem auto
+    @media (min-width: 768px)
+        max-width: 700px
+        justify-content: space-between
+        margin: 30px auto
+    @media (min-width: 1024px)
+        max-width: 950px
+    @media (min-width: 1920px)
+        max-width: 1800px
+        margin: 30px auto    
+
+    &__logo img
+        width: 15vw
+        @media (min-width: 768px)
+            width: 90%
+        @media (min-width: 1024px)
+            width: 100%    
